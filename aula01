@@ -1,1 +1,45 @@
 
+
+git commit --amend -m "nova mensagem" = mensagem do commit
+
+git reset --soft c0d2869e20a82ff5b7d27bb6692f55094fab2f80 == retorna para o commit com os arquivos alterados
+
+***
+git reset --mixed c0d2869e20a82ff5b7d27bb6692f55094fab2f80 == retornar os arquivos que foram realizados commit para untrackd file
+
+**
+git reset --hard be194dcefc264d6d6490c72d71cd7d9db673ce71 == ignora os arquivos e desfaz eles. 
+
+
+git restore README.md == restaurar o arquivo git 
+
+=============================================
+
+git checkout -b teste1 = cria uma nova branch a partir da que esta no momento.
+git checkout main = passa para a branch main
+
+***
+git merge teste1 = mescla a branch que esta com uma passada com nome teste1
+
+
+
+git fetch origin main == baixa os arquivos sem fazer o merge com os arquivos locais
+
+git diff main origin/main ==mostra a diferença com os arquivos locais com os arquivos do git site
+
+git merge origin/main  == pega os dados do site para o local e faz merge
+
+git clone URL --branch teste1 --single-branch
+
+
+
+git stash == volta a branch sem nenhuma alteração
+
+git stash list ==mostra oque foi feito.
+
+git checkout -b teste2 == cria uma nova branch com os dados originais
+
+git checkout teste == retorna para a branch teste 
+
+git stash pop == volta com as modificações e remove da lista
+gir stash aply == deixa as modificações na lista e aplica
